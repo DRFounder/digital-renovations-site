@@ -40,20 +40,24 @@ body {
 }
 
 .monogram {
-  display: grid;
-  place-items: center;
-  width: 4rem;
-  height: 4rem;
+  width: 5rem;
+  height: 5rem;
+  overflow: hidden;
   border: 1px solid rgba(125, 211, 252, 0.55);
   border-radius: 0.8rem;
-  color: #7dd3fc;
-  font-size: 1.05rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
+  background: #573a28;
+  box-shadow: 0 0.75rem 2rem rgba(0, 0, 0, 0.22);
+}
+
+.monogram img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .rule {
-  width: 4rem;
+  width: 5rem;
   height: 2px;
   margin: 2rem 0;
   background: #38bdf8;
