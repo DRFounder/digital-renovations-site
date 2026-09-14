@@ -3,35 +3,133 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="theme-color" content="#091525">
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'"
-    >
+    <meta name="theme-color" content="#081524">
     <meta
       name="description"
-      content="Digital Renovations LLC website under development."
+      content="Digital Renovations LLC develops responsible, human-centered technology. Veteran Companion is our flagship initiative."
     >
-    <title>Digital Renovations LLC</title>
-    <link rel="stylesheet" href="styles.css?v=3">
+    <meta property="og:title" content="Digital Renovations LLC">
+    <meta
+      property="og:description"
+      content="Technology as the bridge, not the destination."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://digitalrenovations.net/">
+    <meta property="og:image" content="https://digitalrenovations.net/dr-monogram.webp">
+    <meta name="twitter:card" content="summary">
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'; frame-ancestors 'none'; upgrade-insecure-requests"
+    >
+    <title>Digital Renovations LLC | Human-Centered Technology</title>
+    <link rel="canonical" href="https://digitalrenovations.net/">
+    <link rel="stylesheet" href="styles.css?v=4">
   </head>
   <body>
-    <main class="site-shell">
-      <section class="identity" aria-labelledby="company-name">
-        <div class="monogram" aria-hidden="true">
-          <img src="dr-monogram.webp?v=3" alt="" width="80" height="80">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Digital Renovations home">
+        <img src="dr-monogram.webp?v=3" alt="" width="56" height="56">
+        <span>Digital Renovations</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#mission">Mission</a>
+        <a href="#veteran-companion">Veteran Companion</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section class="hero" id="top" aria-labelledby="hero-heading">
+        <div class="hero-copy">
+          <p class="eyebrow">Digital Renovations LLC</p>
+          <h1 id="hero-heading">Technology as the bridge,<br><span>not the destination.</span></h1>
+          <p class="hero-intro">
+            We develop responsible, human-centered technology designed to help people
+            move toward stronger human connection, practical support, and independence.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#veteran-companion">Explore our flagship initiative</a>
+            <a class="button button-secondary" href="#mission">Our approach</a>
+          </div>
         </div>
-        <div class="rule" aria-hidden="true"></div>
-        <h1 id="company-name">Digital Renovations LLC</h1>
-        <p>Website under development.</p>
+
+        <div class="bridge-mark" aria-hidden="true">
+          <span class="bridge-tower bridge-tower-left"></span>
+          <span class="bridge-tower bridge-tower-right"></span>
+          <span class="bridge-deck"></span>
+          <span class="bridge-arc"></span>
+        </div>
       </section>
 
-      <footer>
-        <span>Founded 2025</span>
-        <span class="divider" aria-hidden="true">·</span>
-        <span>© 2026 Digital Renovations LLC</span>
-      </footer>
+      <section class="mission section" id="mission" aria-labelledby="mission-heading">
+        <div class="section-heading">
+          <p class="eyebrow">Our mission</p>
+          <h2 id="mission-heading">Build technology that strengthens the path back to people.</h2>
+        </div>
+        <div class="principles" aria-label="Our guiding principles">
+          <article>
+            <span class="principle-number">01</span>
+            <h3>Human connection</h3>
+            <p>Technology should help people reach meaningful human support—not become a substitute for it.</p>
+          </article>
+          <article>
+            <span class="principle-number">02</span>
+            <h3>Trust by design</h3>
+            <p>Safety, transparency, dignity, and user control belong in the foundation of every system.</p>
+          </article>
+          <article>
+            <span class="principle-number">03</span>
+            <h3>Purposeful independence</h3>
+            <p>The measure of useful technology is the progress it helps people make beyond the technology itself.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="flagship section" id="veteran-companion" aria-labelledby="vc-heading">
+        <div class="flagship-card">
+          <div class="flagship-label">
+            <span class="status-dot" aria-hidden="true"></span>
+            Flagship initiative · In development
+          </div>
+          <div class="flagship-grid">
+            <div>
+              <p class="eyebrow">Veteran Companion</p>
+              <h2 id="vc-heading">Veteran-aware support, built with mission boundaries.</h2>
+            </div>
+            <div class="flagship-copy">
+              <p>
+                Veteran Companion is an emerging AI safety companion designed to help veterans
+                orient, reflect, and connect with appropriate human support while preserving
+                agency and privacy.
+              </p>
+              <p>
+                It is not a therapist, doctor, emergency service, law-enforcement tool, or
+                replacement for the people and professionals in a veteran’s life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" aria-labelledby="contact-heading">
+        <p class="eyebrow">Start a conversation</p>
+        <h2 id="contact-heading">Interested in the work?</h2>
+        <p>We welcome thoughtful conversations with veterans, researchers, clinicians, technologists, and mission-aligned partners.</p>
+        <a class="text-link" href="mailto:Founder@digitalrenovations.net">Founder@digitalrenovations.net <span aria-hidden="true">→</span></a>
+      </section>
     </main>
+
+    <footer>
+      <div>
+        <strong>Digital Renovations LLC</strong>
+        <span>Mitchell, South Dakota</span>
+      </div>
+      <div class="footer-meta">
+        <span>Founded 2025</span>
+        <span>© 2026 Digital Renovations LLC</span>
+      </div>
+    </footer>
   </body>
 </html>
