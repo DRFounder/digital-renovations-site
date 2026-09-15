@@ -7,7 +7,7 @@ Official website for Digital Renovations LLC, deployed through GitHub Pages at
 
 - `index.html` — homepage content and metadata
 - `styles.css` — responsive visual design
-- `dr-monogram.webp` — established DR brand mark
+- `dr-monogram-gold.webp` — established transparent DR brand mark
 - `CNAME` — GitHub Pages custom-domain configuration; preserve unchanged
 - `robots.txt` and `sitemap.xml` — search discovery configuration
 
