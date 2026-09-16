@@ -109,6 +109,17 @@ nav a:focus-visible {
   align-items: center;
   min-height: min(47rem, calc(100vh - 6.5rem));
   padding: clamp(4rem, 6vw, 5rem) 0 clamp(5rem, 11vw, 9rem);
+  isolation: isolate;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 calc(50% - 50vw);
+  background: url("hero-us-flag.webp") center bottom / cover no-repeat;
+  opacity: 0.82;
+  pointer-events: none;
 }
 
 .hero-copy {
@@ -449,6 +460,11 @@ footer strong {
 
   .hero {
     min-height: auto;
+  }
+
+  .hero::before {
+    background-position: 68% bottom;
+    opacity: 0.58;
   }
 
   .bridge-mark {
