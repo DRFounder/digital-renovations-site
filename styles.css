@@ -200,55 +200,6 @@ h1 span {
   box-shadow: 0 0.65rem 1.5rem rgba(0, 0, 0, 0.22);
 }
 
-.bridge-mark {
-  position: absolute;
-  right: -4rem;
-  bottom: 7%;
-  width: min(46vw, 34rem);
-  height: 14rem;
-  opacity: 0.19;
-}
-
-.bridge-deck,
-.bridge-tower,
-.bridge-arc {
-  position: absolute;
-  display: block;
-}
-
-.bridge-deck {
-  right: 0;
-  bottom: 3.5rem;
-  left: 0;
-  height: 2px;
-  background: var(--accent);
-}
-
-.bridge-tower {
-  bottom: 3.5rem;
-  width: 2px;
-  height: 8.6rem;
-  background: var(--accent);
-}
-
-.bridge-tower-left {
-  left: 22%;
-}
-
-.bridge-tower-right {
-  right: 22%;
-}
-
-.bridge-arc {
-  right: 7%;
-  bottom: 3.5rem;
-  left: 7%;
-  height: 10rem;
-  border-top: 2px solid var(--accent);
-  border-radius: 50% 50% 0 0;
-  transform: rotate(180deg);
-}
-
 .section {
   padding: clamp(5rem, 10vw, 8.5rem) 0;
   border-top: 1px solid var(--line);
@@ -465,12 +416,6 @@ footer strong {
   .hero::before {
     background-position: 68% bottom;
     opacity: 0.58;
-  }
-
-  .bridge-mark {
-    right: -7rem;
-    width: 28rem;
-    opacity: 0.12;
   }
 
   .section-heading,
