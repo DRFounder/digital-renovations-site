@@ -507,3 +507,51 @@ footer strong {
     transition: none !important;
   }
 }
+
+/* Journal */
+.journal-main {
+  min-height: calc(100vh - 12rem);
+}
+
+.journal-intro {
+  padding: clamp(5rem, 10vw, 8rem) 0 clamp(4rem, 8vw, 6rem);
+}
+
+.journal-intro h1 {
+  max-width: 12ch;
+  margin-bottom: 1.8rem;
+}
+
+.journal-lede {
+  max-width: 46rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: clamp(1.08rem, 2vw, 1.28rem);
+  line-height: 1.75;
+}
+
+.journal-placeholder {
+  margin-bottom: clamp(5rem, 10vw, 8rem);
+  padding: clamp(2rem, 5vw, 3.5rem);
+  border: 1px solid rgba(69, 198, 242, 0.32);
+  border-radius: 0.9rem;
+  background:
+    linear-gradient(135deg, rgba(69, 198, 242, 0.09), transparent 52%),
+    var(--ink-raised);
+}
+
+.journal-placeholder h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+}
+
+.journal-placeholder p {
+  max-width: 44rem;
+  margin-bottom: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+nav a[aria-current="page"] {
+  color: var(--paper);
+}
