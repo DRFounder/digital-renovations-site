@@ -81,9 +81,10 @@ footer {
 
 .brand img {
   display: block;
-  width: 6rem;
+  width: 10.5rem;
   height: auto;
-  filter: drop-shadow(0 0.55rem 0.75rem rgba(0, 0, 0, 0.32));
+  border-radius: 0.35rem;
+  filter: drop-shadow(0 0.55rem 0.75rem rgba(0, 0, 0, 0.25));
 }
 
 nav {
@@ -104,8 +105,9 @@ nav a:focus-visible {
 
 
 .identity-banner {
-  width: min(100% - 2rem, 88rem);
-  margin: clamp(1.5rem, 4vw, 3rem) auto 0;
+  width: min(calc(100vw - 2rem), 96rem);
+  margin: clamp(1.5rem, 4vw, 3rem) 0 0 50%;
+  transform: translateX(-50%);
   overflow: hidden;
   border: 1px solid rgba(69, 198, 242, 0.28);
   border-radius: 0.9rem;
@@ -454,17 +456,16 @@ footer strong {
   }
 
   .brand img {
-    width: 5rem;
+    width: 8rem;
   }
 
-  .brand span,
   nav a:nth-child(1),
   nav a:nth-child(2) {
     display: none;
   }
 
   .identity-banner {
-    width: min(100% - 1rem, 88rem);
+    width: calc(100vw - 1rem);
     border-radius: 0.5rem;
   }
 
