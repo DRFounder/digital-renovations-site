@@ -290,15 +290,17 @@ h3 {
   box-shadow: 0 0 0 0.3rem var(--accent-soft);
 }
 
-.flagship-grid {
+.vc-overview {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
-  gap: clamp(2rem, 7vw, 6rem);
+  grid-template-columns: 1.15fr 1fr;
+  gap: clamp(2.5rem, 7vw, 6rem);
+  align-items: end;
 }
 
-.flagship-grid h2 {
+.vc-overview h2 {
+  max-width: 14ch;
   margin-bottom: 0;
-  font-size: clamp(2.2rem, 5vw, 4.5rem);
+  font-size: clamp(2.45rem, 5vw, 4.6rem);
 }
 
 .veteran-origin {
@@ -309,17 +311,163 @@ h3 {
   letter-spacing: 0.04em;
 }
 
-.flagship-copy {
-  align-self: end;
-  font-size: 1.03rem;
+.vc-lede {
+  color: var(--muted);
+  font-size: 1.02rem;
+  line-height: 1.75;
 }
 
-.flagship-copy p:last-child {
+.vc-lede p:last-child {
   margin-bottom: 0;
-  padding-top: 1.15rem;
+}
+
+.vc-boundary {
+  padding-top: 1.2rem;
   border-top: 1px solid var(--line);
   color: var(--muted-dark);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
+}
+
+.vc-pillars {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: clamp(4rem, 8vw, 7rem);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.vc-pillar {
+  padding: clamp(2rem, 4vw, 3.25rem);
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: rgba(7, 19, 33, 0.34);
+}
+
+.vc-step {
+  margin-bottom: 2.5rem;
+  color: var(--accent);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+}
+
+.vc-pillar h3,
+.vc-section-heading h3,
+.vc-continuity h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.55rem, 2.8vw, 2.35rem);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.vc-pillar > p:not(.vc-step),
+.vc-section-heading > p:not(.eyebrow),
+.vc-level p,
+.vc-framework-note,
+.vc-continuity article > p:not(.eyebrow):not(.vc-closing) {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.vc-pillar p:last-child {
+  margin-bottom: 0;
+}
+
+.vc-emphasis {
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  color: var(--paper) !important;
+  font-weight: 650;
+}
+
+.vc-framework {
+  padding: clamp(4rem, 8vw, 7rem) 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.vc-section-heading {
+  max-width: 50rem;
+  margin-bottom: 2.5rem;
+}
+
+.vc-section-heading h3 {
+  max-width: 22ch;
+}
+
+.vc-levels {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 0.7rem;
+  background: var(--line);
+}
+
+.vc-level {
+  padding: clamp(1.7rem, 3vw, 2.4rem);
+  background: rgba(7, 19, 33, 0.88);
+}
+
+.vc-level-critical {
+  background:
+    linear-gradient(145deg, rgba(69, 198, 242, 0.1), transparent 70%),
+    rgba(7, 19, 33, 0.9);
+}
+
+.vc-level-number {
+  display: inline-grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(69, 198, 242, 0.45);
+  border-radius: 50%;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 800;
+}
+
+.vc-level h4 {
+  margin: 0 0 0.8rem;
+  font-size: 1.2rem;
+}
+
+.vc-level p {
+  margin-bottom: 0;
+  font-size: 0.93rem;
+}
+
+.vc-framework-note {
+  max-width: 52rem;
+  margin: 1.5rem 0 0;
+  color: var(--muted-dark);
+  font-size: 0.9rem;
+}
+
+.vc-continuity {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(2.5rem, 7vw, 6rem);
+  padding-top: clamp(4rem, 8vw, 7rem);
+}
+
+.vc-continuity article > p:last-child {
+  margin-bottom: 0;
+}
+
+.vc-success {
+  padding: clamp(2rem, 4vw, 3rem);
+  border: 1px solid rgba(69, 198, 242, 0.28);
+  border-radius: 0.7rem;
+  background: rgba(69, 198, 242, 0.06);
+}
+
+.vc-closing {
+  margin: 1.5rem 0 0;
+  color: var(--paper);
+  font-size: 1.05rem;
+  font-weight: 800;
 }
 
 .about-grid {
@@ -419,13 +567,24 @@ footer strong {
   }
 
   .section-heading,
-  .flagship-grid,
+  .vc-overview,
+  .vc-continuity,
   .about-grid {
     grid-template-columns: 1fr;
   }
 
-  .principles {
+  .principles,
+  .vc-pillars,
+  .vc-levels {
     grid-template-columns: 1fr;
+  }
+
+  .vc-pillars {
+    border-top: 1px solid var(--line);
+  }
+
+  .vc-pillar {
+    padding-inline: 1.4rem;
   }
 
   .principles article {
