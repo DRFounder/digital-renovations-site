@@ -108,7 +108,7 @@ nav a:focus-visible {
   display: grid;
   align-items: center;
   min-height: min(47rem, calc(100vh - 6.5rem));
-  padding: clamp(5rem, 11vw, 9rem) 0;
+  padding: clamp(4rem, 6vw, 5rem) 0 clamp(5rem, 11vw, 9rem);
 }
 
 .hero-copy {
