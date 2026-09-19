@@ -730,3 +730,26 @@ nav a[aria-current="page"] {
     gap: 1.4rem;
   }
 }
+
+
+/* Veteran’s Companion product identity */
+.vc-brand {
+  max-width: 34rem;
+  margin: 0 0 clamp(2rem, 4vw, 3.25rem);
+  padding: clamp(0.35rem, 1vw, 0.75rem);
+  border-radius: 0.75rem;
+  background: #000;
+}
+
+.vc-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 48rem) {
+  .vc-brand {
+    width: min(100%, 28rem);
+    margin-inline: auto;
+  }
+}
