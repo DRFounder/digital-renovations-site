@@ -86,6 +86,26 @@ nav a:focus-visible {
 }
 
 
+nav .journal-nav-link {
+  padding: 0.52rem 0.78rem;
+  border: 1px solid rgba(69, 198, 242, 0.72);
+  border-radius: 0.42rem;
+  background: var(--accent-soft);
+  color: var(--paper);
+  font-size: 0.94rem;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  box-shadow: 0 0 0 1px rgba(69, 198, 242, 0.06);
+}
+
+nav .journal-nav-link:hover,
+nav .journal-nav-link:focus-visible {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--ink);
+}
+
+
 .identity-banner {
   width: min(calc(100vw - 2rem), 96rem);
   margin: clamp(1.5rem, 4vw, 3rem) 0 0 50%;
@@ -537,6 +557,20 @@ footer strong {
 }
 
 @media (max-width: 48rem) {
+  nav {
+    align-items: center;
+    gap: 0.55rem;
+  }
+
+  nav a {
+    font-size: 0.8rem;
+  }
+
+  nav .journal-nav-link {
+    padding: 0.48rem 0.62rem;
+    font-size: 0.84rem;
+  }
+
   .site-header,
   main,
   footer {
